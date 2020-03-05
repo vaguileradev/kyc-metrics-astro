@@ -709,6 +709,7 @@ const Home = (props) => (
         display: flex;
         flex-flow: column;
         justify-content: space-around;
+        font-size: 14px;
       }
 
       .report-card:hover {
@@ -758,11 +759,13 @@ const Home = (props) => (
         opacity: .3;
         transition: .2s ease opacity;
         cursor: pointer;
+        font-size: 13px;
       }
 
       .maintag.active {
         opacity: 1;
         transition: .2s ease opacity;
+        font-weight: bold;
       }
 
       .dates {

@@ -81,7 +81,7 @@ const Reports = ({ challenges }) => {
         </div>
         <div className="maintags">
           {
-            mainTags && mainTags.map(text => <div key={text} onClick={() => toggleTag(text)} className={`maintag ${text} ${selectedTags.includes(text) ? 'active' : 'deactive'}`}>{text}</div>)
+            mainTags && mainTags.map(text => <div key={text} onClick={() => toggleTag(text)} className={`maintag ${text} ${selectedTags.includes(text) ? 'active' : 'deactive'}`}>{text.toUpperCase()}</div>)
           }
         </div>
       </div>
