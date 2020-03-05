@@ -11,6 +11,7 @@ const Home = (props) => (
     </Head>
 
     <main>
+       <div className="section-title">Reportes KYC Demo</div>
       <Reports challenges={{
    "reports":[
       {
@@ -673,12 +674,29 @@ const Home = (props) => (
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       }
 
+      .section-title {
+         height: 50px;
+         position: absolute;
+         top: 0;
+         display: flex;
+         align-items: center;
+         width: 100vw;
+         left: 0;
+         padding-left: 32px;
+         background: #23435e;
+         font-size: 16px;
+         font-weight: bold;
+         z-index: 10;
+         color: white;
+      }
+
       html {
         background: rgba(150,150,150,.05);
       }
 
       body {
         padding: 32px;
+        margin-top: 50px;
       }
 
       * {
@@ -807,7 +825,7 @@ const Home = (props) => (
         background: white;
         position: absolute;
         left: 238px;
-        top: 0px;
+        top: 50px;
         padding: 32px 40px 40px;
         left: 100%;
         transition: 1s ease left;
