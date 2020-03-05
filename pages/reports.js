@@ -4,7 +4,7 @@
 const React = require('react');
 const Head = require('next/head');
 
-const Tabs = require('./Tabs');
+const Tabs = require('./tabs');
 const Search = require('./Search');
 
 const { useState, useEffect } = React;
