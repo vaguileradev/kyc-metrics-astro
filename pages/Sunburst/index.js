@@ -16,10 +16,10 @@ function SunburstChart({ sunburstData }) {
     user_compliant: '#3AA339', // Green 2
     user_identifier_confirmation: '#496379',
     user_company_name: '#1A3145', // Gray 1
-    user_legal_entity_documentation: '#D6716F', // Gray 2
+    user_legal_entity_documentation: '#3AA339', // Gray 2
     user_phone: '#37546C',
     user_underage: '#DB8481',
-    user_proof_of_life: '#F2DCA6',
+    user_proof_of_life: '#3E5365',
     user_birthdate: '#E19A98',
     user_nationality: '#3E5365',
     user_home_address: '#76CCCC',
@@ -30,7 +30,8 @@ function SunburstChart({ sunburstData }) {
     user_engine_unhandled: '#FC5A5A',
     user_proof_of_life_unknown: '#570F0E',
     user_proof_of_life_bad_quality: '#30414F',
-    user_inconsistency: '#4281B5'
+    user_inconsistency: '#4281B5',
+    frontend_compliant: '#3AA339'
   };
 
   const checkChildren = (item) => {
@@ -43,7 +44,7 @@ function SunburstChart({ sunburstData }) {
       updatedItem.children = updatedItem.children.map(child => checkChildren(child));
     }
 
-    updatedItem.color = colorMap[item.name];
+    updatedItem.color = colorMap[item.name] ? colorMap[item.name] : '#23435e';
 
     if (updatedItem.name === 'nowhere') updatedItem.name = '';
 
