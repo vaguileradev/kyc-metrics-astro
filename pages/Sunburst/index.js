@@ -16,7 +16,7 @@ function SunburstChart({ sunburstData }) {
     user_compliant: '#3AA339', // Green 2
     user_identifier_confirmation: '#496379',
     user_company_name: '#1A3145', // Gray 1
-    user_legal_entity_documentation: '#3AA339', // Gray 2
+    user_legal_entity_documentation: '#2E4355', // Gray 2
     user_phone: '#37546C',
     user_underage: '#DB8481',
     user_proof_of_life: '#3E5365',

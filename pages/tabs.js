@@ -1,7 +1,7 @@
 /* eslint-disable nordic/i18n-jsx-no-literals */
-const React = require('react');
-const Close = require('./Close');
-const Sunburst = require('./Sunburst');
+import React from 'react'
+import Close from './Close'
+import Sunburst from './Sunburst'
 
 const { useState, useEffect } = React;
 const restclient = {}
@@ -153,4 +153,4 @@ function Tabs({ report, handleClose }) {
   );
 }
 
-module.exports = Tabs;
+export default Tabs;

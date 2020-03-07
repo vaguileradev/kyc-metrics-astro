@@ -20,6 +20,13 @@ const getReport = (reportId, type) => new Promise((resolve, reject) => {
     })
 })
 
+const getReports = (reportId, type) => new Promise((resolve, reject) => {
+    request(`https://rester-app-hosting.firebaseapp.com/challenges.json`, (error, response, body) => {
+        return resolve(response)
+    })
+})
+
 module.exports = {
     getReport,
+    getReports,
 }

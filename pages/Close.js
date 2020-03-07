@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react'
 
 function Close({ onClick }) {
   return (
@@ -16,4 +16,4 @@ function Close({ onClick }) {
   );
 }
 
-module.exports = Close;
+export default Close;

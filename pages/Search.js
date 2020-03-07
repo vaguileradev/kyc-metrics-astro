@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react'
 
 function Search({ onClick }) {
   return (
@@ -19,4 +19,4 @@ function Search({ onClick }) {
   );
 }
 
-module.exports = Search;
+export default Search;

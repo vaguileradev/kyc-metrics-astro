@@ -1,18 +1,18 @@
 /**
  * Module dependencies
  */
-const React = require('react');
-const Head = require('next/head');
+import React from 'react'
+import Head from 'next/head'
 
-const Tabs = require('./tabs');
-const Search = require('./Search');
+import Tabs from './tabs'
+import Search from './Search'
 
 const { useState, useEffect } = React;
 /**
  * DemoView Component
  */
 const Reports = ({ challenges }) => {
-  const [reports, setReports] = useState(challenges ? Object.assign(challenges.reports, {}) : []);
+  const [reports, setReports] = useState(challenges && challenges.reports ? Object.assign(challenges.reports, {}) : []);
   const [selected, setSelected] = useState(false);
   const [mainTags, setMainTags] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);

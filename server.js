@@ -15,10 +15,19 @@ app.prepare().then(() => {
   server.get('/api/posts', (req, res) => {
     res.send({ data: 'response' })
   })
+
+  server.get('/api/reports', async (req, res) => {
+    try {
+      const response = await challengesService.getReports();
+      res.json(response.body);
+    } catch (e) {
+      res.status(e.response ? e.response.status : 500).json(e.response ? e.response.data : { message: e.message });
+    }
+  })
   
   server.get('/api/report/:reportId/:type', async (req, res) => {
     try {
-      const response = await challengesService.getReport(req.params.reportId, req.params.type);
+      const response = await challengesService.getReports();
       res.json(response.data);
     } catch (e) {
       res.status(e.response ? e.response.status : 500).json(e.response ? e.response.data : { message: e.message });
