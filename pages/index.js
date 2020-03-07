@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import Head from 'next/head'
 import ReportsList from './reportsList';
 import 'isomorphic-fetch'
