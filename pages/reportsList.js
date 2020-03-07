@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'React';
 import Head from 'next/head'
 import Reports from './reports';
 import 'isomorphic-fetch'
