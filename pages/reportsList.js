@@ -17,7 +17,6 @@ class ReportList extends React.Component {
         .then((response) => {
           try {
             const data = JSON.parse(response)
-            console.log(data)
             this.setState({
                 list: data,
             })

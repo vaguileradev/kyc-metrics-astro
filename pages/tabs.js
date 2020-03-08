@@ -39,9 +39,6 @@ function Tabs({ report, handleClose }) {
         }
       });
     }
-
-
-    return () => {};
   }, []);
 
   useEffect(() => {
